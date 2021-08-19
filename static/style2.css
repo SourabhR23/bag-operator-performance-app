@@ -1,0 +1,17 @@
+h1 {
+    background-color: rgb(116 76 130);
+}
+.css-hby737 {
+    background-color: rgb(116 76 130);
+}
+.css-1d81imo {
+    font-size: 0.9rem;
+    background: black;
+}
+div.stButton > button:hover{
+              color: black;
+              cursor: pointer;
+}
+div.stButton > button:first-child{
+                  background-color: #F63366;
+}
