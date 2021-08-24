@@ -14,6 +14,10 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
+# Innodatatics Logo
+left_header, right_header = st.columns([3, 1])
+right_header.image('static/innologo.jpeg')
+
 # WebApp Style
 with open('static/style2.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
