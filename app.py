@@ -15,8 +15,7 @@ st.set_page_config(
 )
 
 # Innodatatics Logo
-left_header, right_header = st.columns([3, 1])
-right_header.image('static/innologo.jpeg')
+st.sidebar.image('static/innologo.png', width=250)
 
 # WebApp Style
 with open('static/style2.css') as f:
