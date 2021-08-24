@@ -11,7 +11,7 @@ h1 {
     font-size: 0.9rem;
     background: black;
 }
-/* BUtton */
+/* Button */
 div.stButton > button:hover{
               color: black;
               cursor: pointer;
