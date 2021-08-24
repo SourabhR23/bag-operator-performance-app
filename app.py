@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Innodatatics Logo
-st.sidebar.image('static/innologo.png', width=250)
+st.sidebar.image('static/logo.jpg', width=250)
 
 # WebApp Style
 with open('static/style2.css') as f:
