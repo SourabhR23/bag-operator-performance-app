@@ -19,3 +19,20 @@ div.stButton > button:hover{
 div.stButton > button:first-child{
                   background-color: #F63366;
 }
+/* Main Menu */
+#MainMenu {
+           visibility: none;
+}
+/* Footer */
+footer {
+        visibility: hidden;
+}
+footer:after {
+              content:'Made by Sourabh Rasal ❤'; 
+              visibility: visible;
+              display: block;
+              position: relative;
+              text-align: center;
+              padding: 15px;
+              top: 2px;
+}
