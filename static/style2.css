@@ -21,14 +21,13 @@ div.stButton > button:first-child{
 }
 /* Main Menu */
 #MainMenu {
-           visibility: none;
+           visibility: hidden;
 }
 /* Footer */
 footer {
         visibility: hidden;
 }
 footer:after {
-              content:'Made by Sourabh Rasal ❤'; 
               visibility: visible;
               display: block;
               position: relative;
