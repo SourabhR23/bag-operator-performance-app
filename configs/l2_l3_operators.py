@@ -56,8 +56,21 @@ def op_details(options, operator_id, decisions):
               'Decision': operator_decision,
               'Decision_Time': operator_decision_time}
     inputs_df = pd.DataFrame(inputs, index=[0])
-    inputs_df["Decision"] = inputs_df["Decision"].map({'Accept': 0,
+    """inputs_df["Decision"] = inputs_df["Decision"].map({'Accept': 0,
                                                        'Reject': 1,
-                                                       'Time out': 2})
+                                                       'Time out': 2})"""
+    # Combines user input features with dummy dataset
+    # This will be useful for the encoding phase
+    dummy_data = pd.read_csv(r'Data/dummy_data.csv')
+    df = pd.concat([inputs_df, dummy_data], axis=0)
 
-    return operator_id, inputs_df
+    # Encoding of ordinal features
+
+    encode = ['Decision']
+    for col in encode:
+        dummy = pd.get_dummies(df[col], prefix=col)
+        df = pd.concat([df, dummy], axis=1)
+        del df[col]
+    df = df[:1]  # Selects only the first row (the user input data)
+
+    return operator_id, df
