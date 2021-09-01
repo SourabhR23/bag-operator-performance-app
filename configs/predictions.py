@@ -2,8 +2,10 @@ import streamlit as st
 import pickle
 
 # Load the saved models
-l2_model = pickle.load(open('./Model/L2_Prediction_model.sav', 'rb'))
-l3_model = pickle.load(open('./Model/L3_Prediction_model.sav', 'rb'))
+#l2_model = pickle.load(open('./Model/L2_Prediction_model.sav', 'rb'))
+#l3_model = pickle.load(open('./Model/L3_Prediction_model.sav', 'rb'))
+l2_model = pickle.load(open('./Model/model_L2.pkl', 'rb'))
+l3_model = pickle.load(open('./Model/model_l3.pkl', 'rb'))
 
 
 def model_inputs(options, ids, df_inputs):
