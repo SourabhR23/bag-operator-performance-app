@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from configs.plots import bar_plot
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Operators Data
 l2_operators_data = pd.read_csv('Data/L2_operators.csv')
